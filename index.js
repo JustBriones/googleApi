@@ -13,8 +13,7 @@ $(document).ready(function(){
     var cityOne = $("#cityOne").val()
     $.getJSON(`https://maps.googleapis.com/maps/api/geocode/json?address=${cityOne}`, (data) => {
       var lat = data.results[0].geometry.location.lat;
-
-      console.log(lat);
+      $(".location1").append(`<div class='row lat'>${lat}</div>`)
 }).fail(function(){
       //error handling code
       console.log("that's not a valid location")
@@ -25,8 +24,7 @@ $("#submit2").click(function() {
   var cityTwo = $("#cityTwo").val()
   $.getJSON(`https://maps.googleapis.com/maps/api/geocode/json?address=${cityTwo}`, (data) => {
     var lat = data.results[0].geometry.location.lat;
-
-    console.log(lat);
+    $(".location2").append(`<div class='row lat'>${lat}</div>`)
 }).fail(function(){
     //error handling code
     console.log("that's not a valid location")
@@ -37,8 +35,7 @@ $("#submit3").click(function() {
   var cityThree = $("#cityThree").val()
   $.getJSON(`https://maps.googleapis.com/maps/api/geocode/json?address=${cityThree}`, (data) => {
     var lat = data.results[0].geometry.location.lat;
-
-    console.log(lat);
+    $(".location3").append(`<div class='row lat'>${lat}</div>`)
 }).fail(function(){
     //error handling code
     console.log("that's not a valid location")
