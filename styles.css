@@ -1,0 +1,21 @@
+#app {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  background: #7ecfd2;
+  overflow: hidden;
+  padding: 20px;
+  margin: 0 auto;
+  }
+
+.city-wrapper {
+  height: 100px;
+}
+
+.location {
+  background: #00000066;
+  text-align: center;
+}
