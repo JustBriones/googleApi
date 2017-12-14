@@ -15,7 +15,7 @@
   text-align: center;
   min-height: 500px;
 }
-.lat {
+.temp, .weather, .city {
   justify-content: center;
 }
 #cityOne, #cityTwo, #cityThree {
