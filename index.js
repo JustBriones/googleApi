@@ -1,11 +1,4 @@
-// const request = require('request');
-//
-// request({
-//   url: 'https://maps.googleapis.com/maps/api/geocode/json?address=19377%20E%20Legacy%20Place',
-//   json: true
-// }, (error, response, body) => {
-//   console.log(JSON.stringify(response, undefined, 2));
-// });
+
 
 $(document).ready(function(){
   //submit1 button functionality
