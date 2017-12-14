@@ -1,4 +1,11 @@
-#app {
+body {
+      font-family: 'Lato', sans-serif;
+  }
+  p {
+    color: #fff;
+    font-weight: 600;
+  }
+  #app {
   position: absolute;
   top: 0;
   left: 0;
@@ -14,14 +21,60 @@
   background: #00000066;
   text-align: center;
   min-height: 500px;
+  border-radius: 4px;
+  padding-top: 20px;
 }
 .temp, .weather, .city {
   justify-content: center;
+  margin: 10px 0 10px 0;
+}
+.city {
+  font-size: 30px;
+  font-weight: bold;
+  height: 40px;
+  margin: 55px 0 0;
+  color: #fff;
+}
+.temp {
+  font-size: 36px;
+  font-weight: 500;
+  color: #fff;
+}
+.weather {
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
 }
 #cityOne, #cityTwo, #cityThree {
-  width: 90%;
+  width: 50%;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: hidden;
+  text-align: center;
 }
 .city-wrapper {
   margin: 0 0 18px 0;
   height: auto;
+}
+.row {
+  background: transparent;
+  width: 100%;
+}
+#submit1, #submit2, #submit3 {
+  background:green;
+  border-radius: 4px;
+  border: hidden;
+  color: #fff;
+  font-weight: 600;
+}
+.sun {
+  position: absolute;
+top: -50px;
+right: -50px;
+width: 200px;
+height: 200px;
+border-radius: 50%;
+background: #fce94f;
+background: -webkit-radial-gradient(#fce94f, rgba(252, 233, 79,.50), rgba(252, 233, 79,.1));
+background: radial-gradient(#fce94f, rgba(252, 233, 79,.30), rgba(252, 233, 79,.1));
 }

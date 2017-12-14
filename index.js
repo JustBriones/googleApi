@@ -15,13 +15,13 @@ $(document).ready(function(){
       var temp = data.main.temp
       var weather = data.weather[0].description
       var city = data.name
-      $(".location1").append(`<div class='row city'>${city}</div>`)
-      $(".location1").append(`<div class='row weather'>${weather}</div>`)
-      $(".location1").append(`<div class='row temp'>${temp} &deg;
+      $(".location1").append(`<div class='row row-item city'>${city}</div>`)
+      $(".location1").append(`<div class='row row-item weather'>${weather}</div>`)
+      $(".location1").append(`<div class='row row-item temp'>${temp} &deg;
       F</div>`)
 }).fail(function(){
       //error handling code
-      console.log("that's not a valid location")
+      alert("that's not a valid location")
     })
   })
 //submit2 button functionality
@@ -37,7 +37,7 @@ $("#submit2").click(function() {
     F</div>`)
 }).fail(function(){
     //error handling code
-    console.log("that's not a valid location")
+    alert("that's not a valid location")
   })
 })
 //submit3 button functionality
@@ -53,42 +53,9 @@ $("#submit3").click(function() {
     F</div>`)
 }).fail(function(){
     //error handling code
-    console.log("that's not a valid location")
+    alert("that's not a valid location")
   })
 })
-
-
-//open weather API
-// http://api.openweathermap.org/data/2.5/forecast?id=524901&q=los%20angeles&APPID=cd6b90ba80057d06e230432ecdf83865
-
-
-//ajax
-// $.ajax({
-//     url: `https://api.darksky.net/forecast/86797355dbbc3e0bf5348a2857472e12/${lat},${long}`,
-//     method: 'GET'
-//
-// }).done (function(response){
-//   console.log(response)
-// })
-
-//darksky
-// $.getJSON(`https://api.darksky.net/forecast/86797355dbbc3e0bf5348a2857472e12/${lat},${long}`), (data) => {
-//   console.log(data)
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
