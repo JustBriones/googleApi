@@ -4,7 +4,7 @@ $(document).ready(function(){
   //submit1 button functionality
   $("#submit1").click(function() {
     var cityOne = $("#cityOne").val()
-    $.getJSON(`http://api.openweathermap.org/data/2.5/weather?APPID=cd6b90ba80057d06e230432ecdf83865&units=imperial&q=${cityOne}`, (data) => {
+    $.getJSON(`https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?APPID=cd6b90ba80057d06e230432ecdf83865&units=imperial&q=${cityOne}`, (data) => {
       var temp = data.main.temp
       var weather = data.weather[0].description
       var city = data.name
