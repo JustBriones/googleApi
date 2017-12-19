@@ -59,6 +59,7 @@ body {
 .row {
   background: transparent;
   width: 100%;
+  margin-left: 0 !important;
 }
 #submit1, #submit2, #submit3 {
   background:green;
@@ -77,4 +78,13 @@ border-radius: 50%;
 background: #fce94f;
 background: -webkit-radial-gradient(#fce94f, rgba(252, 233, 79,.50), rgba(252, 233, 79,.1));
 background: radial-gradient(#fce94f, rgba(252, 233, 79,.30), rgba(252, 233, 79,.1));
+}
+
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 768px) {
+    /* For desktop: */
+    .city-wrapper {
+          min-width: 100% !important;
+    }
 }
